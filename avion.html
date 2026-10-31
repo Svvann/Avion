@@ -13,6 +13,8 @@
 <script>
 const canvas = document.getElementById('jeu');
 const ctx = canvas.getContext('2d');
+// Largeur calculée selon la fenêtre pour occuper tout l'écran
+canvas.width = Math.round(canvas.height * window.innerWidth / window.innerHeight);
 const W = canvas.width, H = canvas.height;
 
 // Adapte la taille à la fenêtre en gardant le ratio
